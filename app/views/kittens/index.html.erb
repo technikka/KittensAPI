@@ -1,0 +1,20 @@
+<nav>
+  <%= link_to "Create", new_kitten_path %>
+</nav>
+
+<h3>Kittens! Kittens! Everywhere!</h3>
+
+<% @kittens.each do |kitten| %>
+  <div>
+    <strong><%= link_to kitten.name, kitten_path(kitten.id)%></strong>
+    <p>
+      age: <%= kitten.age %>
+    </p>
+    <p>
+      cuteness: <%= kitten.cuteness %>
+    </p>
+    <p>
+      softness: <%= kitten.softness %>
+    </p>
+  </div>
+<% end %>

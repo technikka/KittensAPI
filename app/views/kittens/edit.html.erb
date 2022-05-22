@@ -1,0 +1,8 @@
+<h3>Edit Kitten</h3>
+<nav>
+  <%= link_to 'Back', kitten_path(@kitten.id) %>
+  <%= link_to "View all", root_path %>
+  <%= link_to "Create", new_kitten_path %>
+</nav>
+<br>
+<%= render 'form' %>
