@@ -17,3 +17,18 @@
  html {
   font-family: 'source code pro'
  }
+
+ nav {
+   height: 50px;
+   background-color: #d3eaf2;
+   display: grid;
+   align-items: center;
+ }
+
+ .notice {
+   color: green;
+ }
+
+ .alert {
+   color: red;
+ }

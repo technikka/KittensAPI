@@ -5,4 +5,5 @@
   <%= link_to "Create", new_kitten_path %>
 </nav>
 <br>
-<%= render 'form' %>
+<%= render 'form' %> <br>
+<%= link_to "Delete", kitten_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  %>
